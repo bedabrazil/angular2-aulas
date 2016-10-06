@@ -39,7 +39,7 @@ System.register(['angular2/core', './cep-pipe'], function(exports_1) {
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'meu-app',
-                        template: "\n  \t<h1>Angular 2 - Aula 4</h1>\n  \t<p>Valor: {{valor | currency:'BRL':true}}</p>\n\t\t<p>CEP: {{cep | cep}}</p>\n\t\t<p>Data Atual: {{dataAtual | date:'dd/MM/yyyy'}}</p>\n\t\t<p>Data Atual 2: {{dataAtual | date:formatar}}</p>\n\t\t<button (click)=\"mudarFormato()\">Mudar Formato</button>\n  ",
+                        template: "\n  \t<h1>Angular 2 - Aula 4</h1>\n  \t<p>Valor: {{valor | currency:'BRL':true:'1.2-2'}}</p>\n\t\t<p>CEP: {{cep | cep}}</p>\n\t\t<p>Data Atual: {{dataAtual | date:'dd/MM/yyyy'}}</p>\n\t\t<p>Data Atual 2: {{dataAtual | date:formatar}}</p>\n\t\t<button (click)=\"mudarFormato()\">Mudar Formato</button>\n  ",
                         pipes: [cep_pipe_1.CepPipe]
                     }), 
                     __metadata('design:paramtypes', [])

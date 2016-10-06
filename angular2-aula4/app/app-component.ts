@@ -5,7 +5,7 @@ import {CepPipe} from './cep-pipe';
   selector: 'meu-app',
   template: `
   	<h1>Angular 2 - Aula 4</h1>
-  	<p>Valor: {{valor | currency:'BRL':true}}</p>
+  	<p>Valor: {{valor | currency:'BRL':true:'1.2-2'}}</p>
 		<p>CEP: {{cep | cep}}</p>
 		<p>Data Atual: {{dataAtual | date:'dd/MM/yyyy'}}</p>
 		<p>Data Atual 2: {{dataAtual | date:formatar}}</p>
