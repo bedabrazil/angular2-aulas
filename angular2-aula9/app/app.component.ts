@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {ROUTER_DIRECTIVES } from '@angular/router';
 @Component({
   selector: 'meu-app',
   template: `
@@ -10,13 +10,16 @@ import { Component } from '@angular/core';
 		</div>
 		<div>
 		  <ul class="nav navbar-nav">
-		  	<li><a href="">Alunos</a></li>
+		  	<li><a [routerLink]="['/aluno-listar']">Alunos</a></li>
+				<li><a [routerLink]="['/logout']">Sair</a></li>
 		  </ul>
 		</div>
 	  </div>
 	</nav>
     <br /><br /><br />
-	`
+		<router-outlet></router-outlet>
+	`,
+	directives: [ ROUTER_DIRECTIVES ]
 })
 export class AppComponent {
 }
