@@ -27,7 +27,7 @@ exports.AlunosRoutes = [
     },
     {
         path: '',
-        redirectTo: 'aluno-listar',
+        redirectTo: '/aluno-listar',
         terminal: true
     }
 ];

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {ROUTER_DIRECTIVES } from '@angular/router';
+import { ROUTER_DIRECTIVES } from '@angular/router';
+import './rxjs-operators';
 @Component({
   selector: 'meu-app',
   template: `
@@ -11,14 +12,13 @@ import {ROUTER_DIRECTIVES } from '@angular/router';
 		<div>
 		  <ul class="nav navbar-nav">
 		  	<li><a [routerLink]="['/aluno-listar']">Alunos</a></li>
-        <li><a [routerLink]="['/aluno-cadastrar']">Alunos Cadastrar</a></li>
-				<li><a [routerLink]="['/logout']">Sair</a></li>
+		  	<li><a [routerLink]="['/logout']">Sair</a></li>
 		  </ul>
 		</div>
 	  </div>
 	</nav>
     <br /><br /><br />
-		<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 	`,
 	directives: [ ROUTER_DIRECTIVES ]
 })
